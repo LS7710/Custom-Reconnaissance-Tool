@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import platform
 import subprocess
+import sys
 
 def ping_site(domain):
     print(f"[+] Pinging {domain}...")
@@ -94,6 +95,13 @@ def run_recon(target):
     check_for_idor(target)
     check_unsecured_files(target)
 
-# Example usage
 if __name__ == "__main__":
-    run_recon("http://example.com")
+    if len(sys.argv) > 1:
+        target_url = sys.argv[1]
+    else:
+        target_url = input("Enter the target URL (e.g., http://example.com): ").strip()
+
+    if not target_url.startswith("http"):
+        target_url = "http://" + target_url
+
+    run_recon(target_url)
