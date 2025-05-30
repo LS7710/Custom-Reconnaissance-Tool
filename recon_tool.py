@@ -4,6 +4,21 @@ import platform
 import subprocess
 import sys
 
+def print_banner():
+    banner = r"""
+
+   ▄████████ ███▄▄▄▄      ▄████████    ▄█   ▄█▄    ▄████████ 
+  ███    ███ ███▀▀▀██▄   ███    ███   ███ ▄███▀   ███    ███ 
+  ███    █▀  ███   ███   ███    ███   ███▐██▀     ███    █▀  
+  ███        ███   ███   ███    ███  ▄█████▀     ▄███▄▄▄     
+▀███████████ ███   ███ ▀███████████ ▀▀█████▄    ▀▀███▀▀▀     
+         ███ ███   ███   ███    ███   ███▐██▄     ███    █▄  
+   ▄█    ███ ███   ███   ███    ███   ███ ▀███▄   ███    ███ 
+ ▄████████▀   ▀█   █▀    ███    █▀    ███   ▀█▀   ██████████ 
+                                      ▀                      
+    """
+    print(banner)
+
 def ping_site(domain):
     print(f"[+] Pinging {domain}...")
     param = '-n' if platform.system().lower() == 'windows' else '-c'
@@ -86,6 +101,7 @@ def check_unsecured_files(url):
             pass
 
 def run_recon(target):
+    print_banner()
     domain = target.replace("http://", "").replace("https://", "").split('/')[0]
     ping_site(domain)
     get_server_info(target)
