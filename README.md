@@ -1,18 +1,29 @@
-# Custom Recon Tool
+# Custom Reconnaissance Tool
 
-*It is 5 am, I cant sleep so might as well code*
+Welcome to your lightweight Python-based recon tool for ethical hacking and cybersecurity research!
 
-readme to be updated
+This script is a one-stop command-line utility for quickly gathering key information about a website. It automates multiple passive and active information-gathering techniques to save you time and clicks.
 
-as of now this is a small tool meant to simplify some aspects of recon gathering from webapps
+---
 
-main features will consist of the following:
-1. basic website pinging
-2. server detail gathering
-3. Gathering info on page's tech stack
-4. Checks and parses robot.txt
-5. Finds related subdomains
-6. Finds hidden endpoints or pages
-7. Find forms or fields for code injection
-8. IDOR Detection
-9. Dection for unsecured files/links (.bak, .zip, .env, .log, etc.)
+## 💻 What It Does
+
+With a single URL input, the tool performs the following checks:
+
+- **Ping Check** — Check if the Domain is up and running
+- **Server Headers** — Detects what server the site is running on
+- **robots.txt Check** — Reads disallowed paths for possible information gathering
+- **Hidden Page Brute Force** — Finds pages like `/admin`, `/backup`, etc.
+- **Form Scanner** — Lists all `<form>` actions and methods (XSS, SQLi target indicators)
+- **IDOR Fuzzer** — Searches common parameter names for possible insecure object access
+- **Sensitive File Scanner** — Tries to find unsecured files `.env`, `.git/`, `backup.zip`
+
+---
+
+## Setup
+
+### 1. Clone the repo or copy the script
+```bash
+git clone <your-repo-url>
+cd Custom-Reconnaissance-Tool
+
