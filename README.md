@@ -1,6 +1,6 @@
 # Custom Reconnaissance Tool
 
-This is a quick and simple, single command reconissance tool meant to be used through the CLI to quickly gather a handful of commonly used information from a website by pentesters and security analysts
+This is a quick and simple, single-command reconissance tool meant to be used through the CLI to quickly gather a handful of commonly used information from a website by pentesters and security analysts
 
 ---
 
