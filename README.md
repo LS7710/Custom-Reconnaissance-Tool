@@ -6,7 +6,7 @@ readme to be updated
 
 as of now this is a small tool meant to simplify some aspects of recon gathering from webapps
 
-main features will consist of the followinga:
+main features will consist of the following:
 1. basic website pinging
 2. server detail gathering
 3. Gathering info on page's tech stack
