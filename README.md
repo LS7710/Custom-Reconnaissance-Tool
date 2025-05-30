@@ -59,8 +59,10 @@ python recon_tool.py
 The tool uses a default file called common.txt to guess hidden pages.
 
 You can:
-	•	Download one from SecLists
-	•	Or make your own like this:
+
+•	Download one from SecLists
+
+•	Or make your own like this:
 ```
 admin
 login
