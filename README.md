@@ -24,6 +24,28 @@ With a single URL input, the tool performs the following checks:
 ```bash
 git clone <your-repo-url>
 cd Custom-Reconnaissance-Tool
-'''
+```
+### 2. Create a virtual enviornment (Optional but recommended)
+*This step is recommended if you plan to use this on a Mac or a linux distro that uses a system-managed Python installation protected by PEP668, preventing you from installing the packages needed to make this run (requests beautifulsoup4)*
 
-### test
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install required libraries
+```bash
+pip install requests beautifulsoup4
+```
+
+## How to use
+
+### Option 1: Run  with a URL argument
+```bash
+python recon_tool.py http://example.com
+```
+### Option 2: Let it prompt you
+```bash
+python recon_tool.py
+# Then type the full URL when asked
+```
