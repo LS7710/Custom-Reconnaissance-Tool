@@ -1,8 +1,6 @@
 # Custom Reconnaissance Tool
 
-Welcome to your lightweight Python-based recon tool for ethical hacking and cybersecurity research!
-
-This script is a one-stop command-line utility for quickly gathering key information about a website. It automates multiple passive and active information-gathering techniques to save you time and clicks.
+This us a quick and simple, single command reconissance tool meant to be used through the CLI to quickly gather a handful of commonly used information from a website by pentesters and security analysts
 
 ---
 
