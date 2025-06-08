@@ -36,7 +36,7 @@ With a single URL input, the tool performs the following checks:
 
 ### 1. Clone the repo or copy the script
 ```bash
-git clone <your-repo-url>
+git clone git@github.com:LS7710/Snake-Custom-Reconnaissance-Tool.git
 cd Custom-Reconnaissance-Tool
 ```
 ### 2. Create a virtual enviornment (Optional but recommended)
